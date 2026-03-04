@@ -1,6 +1,6 @@
 # Money Jotter Privacy Policy
 
-Last Updated: January 2026
+Last Updated: February 2026
 
 ## Introduction
 
@@ -27,9 +27,10 @@ The App uses the following third-party services, which may collect certain infor
   - Advertising identifier (Advertising ID / IDFA)
   - IP address
   - Ad interaction information
+- **App Tracking Transparency (ATT)**: On iOS, the App presents a system dialog requesting your tracking authorization. If you grant permission, the advertising service may use your data for cross-app tracking to deliver personalized ads. If you deny or have not yet authorized, the advertising service will only show non-personalized (contextual) ads. You can change this authorization at any time in iOS Settings > Privacy & Security > Tracking.
 - **Privacy Policy**: [Google AdMob Privacy Policy](https://policies.google.com/privacy)
 - **Opt-Out**:
-  - **iOS**: Settings > Privacy > Tracking > Disable "Allow Apps to Request to Track"
+  - **iOS**: Settings > Privacy & Security > Tracking > Disable tracking permission for this App
   - **Android**: Settings > Google > Ads > Reset Advertising ID or opt out of personalized ads
 
 #### Google Play Services (Android Only)
@@ -63,18 +64,30 @@ The App uses the following third-party services, which may collect certain infor
   - Personally identifiable information
 - **Privacy Policy**: [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
 
+#### Firebase Remote Config (Remote Configuration)
+
+- **Purpose**: Check whether a mandatory app update is required
+- **Information Collected**:
+  - App version information
+  - Platform information (iOS / Android)
+- **Information NOT Collected**:
+  - Any personally identifiable information or game data
+
 ## Information Use
 
 ### Local Data Use
 
 - Game records and player information are used solely for in-app features such as displaying scores and history
 - This data is completely stored on your device and you can clear all data at any time by deleting the App
+- The App provides a database export feature (in the Settings page) that allows you to export your local game data for backup or troubleshooting purposes. The exported file is stored on your device and will not leave your device unless you explicitly share it
 
 ### Advertising
 
 - We use Google AdMob to display advertisements
-- Ads may be personalized based on your device information and usage
-- You can opt out of personalized ads (see "Opt-Out" instructions above)
+- On iOS, whether ads are personalized depends on your ATT authorization choice:
+  - **Tracking authorized**: Ads may be personalized based on your interests and usage behavior
+  - **Tracking not authorized**: Only non-personalized (contextual) ads are shown
+- On Android, ads may be personalized based on your device information and usage. You can opt out of personalized ads in system settings
 
 ## Information Sharing
 
@@ -84,7 +97,7 @@ The only possible information sharing is through third-party services (such as G
 
 ## Children's Privacy
 
-The App is suitable for all ages, including children. We do not knowingly collect personally identifiable information from children under 13.
+The App has an age rating of 4+ (Everyone) on the App Store / Google Play. The App is not specifically designed for children, and we do not knowingly collect personally identifiable information from children under 13. The advertising service is not configured with a child-directed tag. If you are a parent or guardian and discover that your child has provided personal information without your consent, please contact us.
 
 ## Data Security
 
@@ -97,8 +110,10 @@ The App is suitable for all ages, including children. We do not knowingly collec
 You have the following rights:
 
 - **Access**: You can view your game data within the App at any time
+- **Export**: You can export your local game data via Settings > Export Database
 - **Deletion**: You can completely clear all data by deleting the App
 - **Opt-Out**: You can opt out of personalized ads (see instructions above)
+- **Report Issues**: You can report issues to us via Settings > Report Issue
 
 ## Changes to This Policy
 
@@ -119,6 +134,7 @@ If you have any questions or suggestions about this Privacy Policy, please conta
 
 - **Email**: gycpapplications@gmail.com
 - **GitHub Issues**: https://github.com/coupleapps/money_jotter_flutter/issues
+- **In-App Report**: Settings > Report Issue
 
 ## Consent
 
@@ -133,7 +149,7 @@ By using the App, you consent to the terms of this Privacy Policy. If you do not
 If you are located in the European Economic Area (EEA), the legal basis for processing your information includes:
 
 - **Legitimate Interest**: Displaying advertisements to support the free operation of the App
-- **Consent**: Using the App indicates your consent to Google AdMob's collection and use of information
+- **Consent**: Through the ATT dialog or by using the App, you consent to the collection and use of related information
 
 You have the right to:
 - Access your personal data
